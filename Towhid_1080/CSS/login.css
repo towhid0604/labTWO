@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.topbar {
+  text-align: end;
+  font-weight: bold;
+  margin: 20px;
+}
+/* MAIN */
+.main {
+  margin: 100px 0;
+}
+/* LOGIN */
+.login-container {
+  border-radius: 15px;
+  background-color: white;
+  border: 2px solid black;
+  width: 700px;
+  height: auto;
+  margin: auto;
+  display: flex;
+}
+
+.login-container .col-1 p {
+  margin-top: 25px;
+  line-height: 28px;
+  font-family: system-ui;
+  text-align: center;
+}
+.login-container .col-1,
+.login-container .col-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.login-container .col-1 {
+  width: 100%;
+}
+.login-container .col-2 {
+  width: 100%;
+  padding: 30px;
+  background-color: #2cb7cc4e;
+  border-radius: 0 15px 15px 0;
+}
+
+/* Form */
+.login {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+}
+.login form {
+  margin-top: 60px;
+}
+.login input[type="text"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 13px 0;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.login input[type="submit"] {
+  padding: 8px 40px;
+  border-radius: 5px;
+  background-color: #2cb7cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.login input:focus-visible {
+  outline: none;
+}
+
+.login input[type="submit"]:hover {
+  background-color: crimson;
+}
+
+.login .heading {
+  margin-top: 10px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 11px;
+}
+.login h2 {
+  margin-top: 10px;
+  text-align: center;
+}
+.login p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.login a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.logina:hover {
+  text-decoration: underline;
+}

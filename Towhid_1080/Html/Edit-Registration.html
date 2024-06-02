@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICON CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/Edit-Registration.css" />
+  </head>
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="logo">
+        <img src="../Img/PUClogo.jpeg" alt="PUClogo" />
+      </div>
+      <div class="searchbar">
+        <input type="search" name="search" placeholder="Search......" />
+      </div>
+      <div class="profile">
+        <a href="#"><i class="fas fa-bell"></i></a>
+        <a href="../Html/chatbot.html"><i class="fas fa-envelope"></i></a>
+        <a href="Edit-Profile.html"><i class="fas fa-user"></i></a>
+      </div>
+    </div>
+    <!-- MENUBAR -->
+    <div class="container">
+      <div class="menubar">
+        <ul class="menu">
+          <li class="menu-item" id="Dashboard">
+            <a href="Home.html"><i class="fas fa-home"></i> Dashboard </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Academic</p>
+          <li class="menu-item">
+            <a href="Schedule.html"><i class="fas fa-clock"></i> Schedule </a>
+          </li>
+          <li class="menu-item">
+            <a href="Exam-Board.html"
+              ><i class="fa-solid fa-scroll"></i> Exam Board
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Grade-Report.html"
+              ><i class="fa-solid fa-chart-column"></i> Grade Report
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Enrolled-Courses.html"
+              ><i class="fa-solid fa-book-open-reader"></i> Enrolled Courses
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Course-Plan.html"
+              ><i class="fa-solid fa-clipboard"></i> Course Plan
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Attendance.html"
+              ><i class="fa-solid fa-clipboard-check"></i> Attendance
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Contact</p>
+          <li class="menu-item">
+            <a href="Chairman.html">
+              <i class="fas fa-file-signature"></i> Chairman
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Advisor.html"> <i class="fas fa-id-badge"></i> Advisor </a>
+          </li>
+          <li class="menu-item">
+            <a href="Course-Instructors.html">
+              <i class="fas fa-user"></i> Course Instructors
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Administrative</p>
+          <li class="menu-item">
+            <a href="Finance.html"> <i class="fas fa-coins"></i> Finance </a>
+          </li>
+          <li class="menu-item">
+            <a href="Announcements.html">
+              <i class="fas fa-bullhorn"></i> Announcements
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Settings</p>
+          <li class="menu-item">
+            <a href="Edit-Profile.html">
+              <i class="fas fa-user-edit"></i> Edit Profile
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Edit-Registration.html"
+              ><i class="fas fa-user-cog"></i> Edit Registration
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="Class-Work.html">
+              <i class="fas fa-bell"></i> Class Work
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <ul class="menu" id="Logout">
+            <li class="menu-item">
+              <a href="login.html">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+        <h4>Edit Registration</h4>
+        <!--  -->
+        <div class="main">
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Tab1')">
+              Personal Information
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'Tab2')">
+              My Address
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'Tab3')">
+              Exam Passed
+            </button>
+          </div>
+
+          <div id="Tab1" class="tabcontent">
+            <form>
+              <div class="form-group">
+                <label for="regnum">Registration No</label>
+                <input
+                  type="number"
+                  id="regnum"
+                  name="regnum"
+                  placeholder="0222310005101080"
+                  readonly
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="batch">Batch</label>
+                <input
+                  type="number"
+                  id="Batch"
+                  name="Batch"
+                  placeholder="43"
+                  readonly
+                  required
+                />
+              </div>
+
+              <div <div class="form-group">
+                <select name="dropdown">
+                  <option placeholder="Regular">Regular</option>
+                  <option placeholder="Credit-Transfer">Credit Transfer</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="	Date-Admission"> Date of Admission</label>
+                <input
+                  type="text"
+                  id="Date-Admission"
+                  name="Date-Admission"
+                  placeholder="03/04/2023"
+                  readonly
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="id">Session</label>
+                <input
+                  type="text"
+                  id="Session"
+                  name="Session"
+                  placeholder="Spring 2023"
+                  readonly
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="MOHAMMED TOWHIDUL ISLAM"
+                  readonly
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="nickname">Nickname Name</label>
+                <input
+                  type="text"
+                  id="nickname"
+                  name="nickname"
+                  value="SOHAN"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="department">Department</label>
+                <input
+                  type="text"
+                  id="department"
+                  name="department"
+                  placeholder="Bsc in CSE"
+                  readonly
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="fathername">Father's Name</label>
+                <input
+                  type="text"
+                  id="fathername"
+                  name="fathername"
+                  value="Mohammed Ishaque"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="mothername">Mother's Name</label>
+                <input
+                  type="text"
+                  id="mothername"
+                  name="mothername"
+                  value="Najnin Akter Razo"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="guardianname">Guardian's Name</label>
+                <input
+                  type="text"
+                  id="guardianname"
+                  name="guardianname"
+                  value="Mohamud Karim"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input
+                  type="tel"
+                  id="mobile"
+                  name="mobile"
+                  value="01833013464"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <button type="submit">Save Change</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="Tab2" class="tabcontent">
+            <form>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  value="Rasulbagh, B-Block, Chwakbazar, Chittagong."
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value="mtowhid0604@gmail.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input
+                  type="tel"
+                  id="mobile"
+                  name="mobile"
+                  value="01833013464"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="religion">Religion</label>
+                <input
+                  type="text"
+                  id="religion"
+                  name="religion"
+                  value="Islam"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="birth">Date Of Birth</label>
+                <input
+                  type="text"
+                  id="birth"
+                  name="birth"
+                  placeholder="07-04-2004" readonly
+                  required
+                />
+              </div>
+
+              <div <div class="form-group">
+                <select name="dropdown">
+                  <option value="Bangladeshi">Bangladeshi</option>
+                  <option value="Non-Bangladeshi">Non Bangladeshi</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="National-id">National ID</label>
+                <input
+                  type="number"
+                  id="National-id"
+                  name="National-id"
+                  value="6918953651"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <button type="submit">Save Change</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="Tab3" class="tabcontent">
+            <table>
+              <tr class="table-heading">
+                <th>Name Of Exam</th>
+                <th>Year Of Passing</th>
+                <th>Exam Roll</th>
+                <th>Group</th>
+                <th>GPA</th>
+                <th>Name of Institution</th>
+                <th>Board</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>SSC</td>
+                <td>2020</td>
+                <td>121689</td>
+                <td>Science</td>
+                <td>4.50</td>
+                <td>Maheshkhali Island High School</td>
+                <td>Chittagong Board</td>
+                <td>on</td>
+              </tr>
+              <tr>
+                <td>HSC</td>
+                <td>2022</td>
+                <td>114010</td>
+                <td>Science</td>
+                <td>4.75</td>
+                <td>Saint Placid's School And College</td>
+                <td>Chittagong Board</td>
+                <td>on</td>
+              </tr>
+            </table>
+          </div>
+
+          <script>
+            function openTab(evt, tabName) {
+              var tabcontent = document.getElementsByClassName("tabcontent");
+              for (var i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              var tablinks = document.getElementsByClassName("tablinks");
+              for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                  " active",
+                  ""
+                );
+              }
+              document.getElementById(tabName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+        </div>
+        <!--  -->
+      </div>
+      <!-- END -->
+    </div>
+  </body>
+</html>

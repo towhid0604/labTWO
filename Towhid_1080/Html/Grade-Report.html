@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICON CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/Grade-Report.css" />
+  </head>
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="logo">
+        <img src="../Img/PUClogo.jpeg" alt="PUClogo" />
+      </div>
+      <div class="searchbar">
+        <input type="search" name="search" placeholder="Search......" />
+      </div>
+      <div class="profile">
+        <a href="#"><i class="fas fa-bell"></i></a>
+        <a href="../Html/chatbot.html"><i class="fas fa-envelope"></i></a>
+        <a href="Edit-Profile.html"><i class="fas fa-user"></i></a>
+      </div>
+    </div>
+    <!-- MENUBAR -->
+    <div class="container">
+      <div class="menubar">
+        <ul class="menu">
+          <li class="menu-item" id="Dashboard">
+            <a href="Home.html"><i class="fas fa-home"></i> Dashboard </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Academic</p>
+          <li class="menu-item">
+            <a href="Schedule.html"><i class="fas fa-clock"></i> Schedule </a>
+          </li>
+          <li class="menu-item">
+            <a href="Exam-Board.html"
+              ><i class="fa-solid fa-scroll"></i> Exam Board
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Grade-Report.html"
+              ><i class="fa-solid fa-chart-column"></i> Grade Report
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Enrolled-Courses.html"
+              ><i class="fa-solid fa-book-open-reader"></i> Enrolled Courses
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Course-Plan.html"
+              ><i class="fa-solid fa-clipboard"></i> Course Plan
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Attendance.html"
+              ><i class="fa-solid fa-clipboard-check"></i> Attendance
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Contact</p>
+          <li class="menu-item">
+            <a href="Chairman.html">
+              <i class="fas fa-file-signature"></i> Chairman
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Advisor.html"> <i class="fas fa-id-badge"></i> Advisor </a>
+          </li>
+          <li class="menu-item">
+            <a href="Course-Instructors.html">
+              <i class="fas fa-user"></i> Course Instructors
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Administrative</p>
+          <li class="menu-item">
+            <a href="Finance.html"> <i class="fas fa-coins"></i> Finance </a>
+          </li>
+          <li class="menu-item">
+            <a href="Announcements.html">
+              <i class="fas fa-bullhorn"></i> Announcements
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Settings</p>
+          <li class="menu-item">
+            <a href="Edit-Profile.html">
+              <i class="fas fa-user-edit"></i> Edit Profile
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Edit-Registration.html"
+              ><i class="fas fa-user-cog"></i> Edit Registration
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Class-Work.html">
+              <i class="fas fa-bell"></i> Class Work
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <ul class="menu" id="Logout">
+            <li class="menu-item">
+              <a href="login.html">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <!-- MENUBAR -->
+
+      <!-- ALL CONTENT -->
+      <div class="all-content">
+        <h2 style="text-align: center;">All Type Of Report</h2>
+        <!-- GRADE REPORT -->
+        <div class="main">
+          <h4>Grade Report</h4>
+          <form id="navigationForm">
+            <label for="report-Session-type">Grade Report Type</label><br />
+            <select id="GRADE-REPORT">
+              <option value="">Select</option>
+              <option>Transcript Session Wise</option>
+              <option>Transcript Full</option>
+              <option>History Full</option>
+              <option>History Only Passed</option>
+              <option>History Only Failed</option>
+            </select>
+          </form>
+          <!-- Error Box-->
+          <div class="error-box" id="GradeError">
+            <h1>WHOOPS!</h1>
+            <p>Grade Report Is Not Published. Try Again Later.</p>
+            <a href="Home.html">Go Home</a>
+          </div>
+          <!-- GRADE REPORT box js -->
+          <script>
+            document
+              .getElementById("GRADE-REPORT")
+              .addEventListener("change", function () {
+                var selectedValue = this.value;
+                var GradeError = document.getElementById("GradeError");
+                if (selectedValue === "") {
+                  GradeError.style.display = "none";
+                } else {
+                  GradeError.style.display = "block";
+                }
+              });
+          </script>
+        </div>
+        <!-- Grade END-->
+
+        <!-- RANK REPORT -->
+        <div class="main">
+          <h4 style="text-align: end">Check Your Rank</h4>
+          <form id="navigationForm">
+            <label for="Rank-Session-type">Rank Report Type</label><br />
+            <select id="RankType">
+              <option value="">Select</option>
+              <option>Section Wise</option>
+              <option>Batch Wise</option>
+              <option>Department Wise</option>
+            </select>
+          </form>
+          <!-- Error Box-->
+          <div class="error-box" id="RankError">
+            <h1>WHOOPS!</h1>
+            <p>Results Is Not Published. Try Again Later.</p>
+            <a href="Home.html">Go Home</a>
+          </div>
+          <!-- GRADE REPORT box js -->
+          <script>
+            document
+              .getElementById("RankType")
+              .addEventListener("change", function () {
+                var selectedValue = this.value;
+                var RankError = document.getElementById("RankError");
+                if (selectedValue === "") {
+                  RankError.style.display = "none";
+                } else {
+                  RankError.style.display = "block";
+                }
+              });
+          </script>
+        </div>
+        <!-- RANK END -->
+
+        <!-- Departmental Report REPORT -->
+        <div class="main">
+          <h4>Departmental Report </h4>
+          <form id="navigationForm">
+            <label for="Departmental-Report">Departmental Report type</label><br />
+            <select id="DepartmentalReport">
+              <option value="">Select</option>
+              <option>Admit Card</option>
+              <option>Enrollment Form Session Wise</option>
+              <option>New Enrollment Form</option>
+              <option>Payment Status</option>
+            </select>
+          </form>
+          <!-- Error Box-->
+          <div class="error-box" id="DepartmentalReportError">
+            <h1>WHOOPS!</h1>
+            <p>Departmental Report Is Not Published. Try Again Later.</p>
+            <a href="Home.html">Go Home</a>
+          </div>
+          <!-- Departmental Report box js -->
+          <script>
+            document
+              .getElementById("DepartmentalReport")
+              .addEventListener("change", function () {
+                var selectedValue = this.value;
+                var DepartmentalReportError = document.getElementById("DepartmentalReportError");
+                if (selectedValue === "") {
+                  DepartmentalReportError.style.display = "none";
+                } else {
+                  DepartmentalReportError.style.display = "block";
+                }
+              });
+          </script>
+        </div>
+        <!-- All Content Div END-->
+      </div>
+      <!-- Content Div END -->
+    </div>
+  </body>
+</html>

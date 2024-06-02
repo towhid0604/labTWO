@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICON CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/Attendance.css" />
+  </head>
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="logo">
+        <img src="../Img/PUClogo.jpeg" alt="PUClogo" />
+      </div>
+      <div class="searchbar">
+        <input type="search" name="search" placeholder="Search......" />
+      </div>
+      <div class="profile">
+        <a href="#"><i class="fas fa-bell"></i></a>
+        <a href="../Html/chatbot.html"><i class="fas fa-envelope"></i></a>
+        <a href="Edit-Profile.html"><i class="fas fa-user"></i></a>
+      </div>
+    </div>
+    <!-- MENUBAR -->
+    <div class="container">
+      <div class="menubar">
+        <ul class="menu">
+          <li class="menu-item" id="Dashboard">
+            <a href="Home.html"><i class="fas fa-home"></i> Dashboard </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Academic</p>
+          <li class="menu-item">
+            <a href="Schedule.html"><i class="fas fa-clock"></i> Schedule </a>
+          </li>
+          <li class="menu-item">
+            <a href="Exam-Board.html"
+              ><i class="fa-solid fa-scroll"></i> Exam Board
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Grade-Report.html"
+              ><i class="fa-solid fa-chart-column"></i> Grade Report
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Enrolled-Courses.html"
+              ><i class="fa-solid fa-book-open-reader"></i> Enrolled Courses
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Course-Plan.html"
+              ><i class="fa-solid fa-clipboard"></i> Course Plan
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Attendance.html"
+              ><i class="fa-solid fa-clipboard-check"></i> Attendance
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Contact</p>
+          <li class="menu-item">
+            <a href="Chairman.html">
+              <i class="fas fa-file-signature"></i> Chairman
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Advisor.html"> <i class="fas fa-id-badge"></i> Advisor </a>
+          </li>
+          <li class="menu-item">
+            <a href="Course-Instructors.html">
+              <i class="fas fa-user"></i> Course Instructors
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Administrative</p>
+          <li class="menu-item">
+            <a href="Finance.html"> <i class="fas fa-coins"></i> Finance </a>
+          </li>
+          <li class="menu-item">
+            <a href="Announcements.html">
+              <i class="fas fa-bullhorn"></i> Announcements
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Settings</p>
+          <li class="menu-item">
+            <a href="Edit-Profile.html">
+              <i class="fas fa-user-edit"></i> Edit Profile
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Edit-Registration.html"
+              ><i class="fas fa-user-cog"></i> Edit Registration
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Class-Work.html">
+              <i class="fas fa-bell"></i> Class Work
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <ul class="menu" id="Logout">
+            <li class="menu-item">
+              <a href="login.html">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+        <!--  -->
+        <h4>Your Attendance Sheet</h4>
+        <table>
+          <p>May 2024</p>
+          <thead>
+            <tr>
+              <th class="Course">Course</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+              <th>17</th>
+              <th>18</th>
+              <th>19</th>
+              <th>20</th>
+              <th>21</th>
+              <th>22</th>
+              <th>23</th>
+              <th>24</th>
+              <th>25</th>
+              <th>26</th>
+              <th>27</th>
+              <th>28</th>
+              <th>29</th>
+              <th>30</th>
+              <th class="missed-col">Days Missed-col</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row">
+              <td class="Course">DEPTL</td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="missed-col">0</td>
+            </tr>
+
+            <tr class="row">
+              <td class="Course">DEPT</td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="missed-col">0</td>
+            </tr>
+
+            <tr class="row">
+              <td class="Course">BS</td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="missed-col">0</td>
+            </tr>
+
+            <tr class="row">
+              <td class="Course">CGVA</td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="missed-col">0</td>
+            </tr>
+
+            <tr class="row">
+              <td class="Course">NM</td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="missed-col">0</td>
+            </tr>
+
+            <tr class="row">
+              <td class="Course">OOPL</td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="missed-col">0</td>
+            </tr>
+
+            <tr class="row">
+              <td class="Course">OOP</td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="missed-col">0</td>
+            </tr>
+
+            <tr class="row">
+              <td class="Course">IP</td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="missed-col">0</td>
+            </tr>
+
+            <tr class="row">
+              <td class="Course">CEng</td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="attend-col"><input type="checkbox" /></td>
+              <td class="missed-col">0</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <!--  -->
+      </div>
+      <!-- END -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  font-size: 17px;
+}
+
+/* HEADER */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.topbar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar .logo {
+  width: 17%;
+  text-align: center;
+}
+
+.topbar .logo img {
+  max-width: 100%;
+  width: 30%;
+}
+
+.topbar .searchbar {
+  width: 63%;
+  text-align: center;
+}
+
+.topbar .searchbar input[type="search"] {
+  width: 55%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1.5px solid black;
+}
+
+.topbar .profile {
+  width: 20%;
+  text-align: center;
+}
+
+.topbar .profile a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-left: 20px;
+}
+/* MENUBAR */
+.menubar {
+  width: 16%;
+  background-color: #1c2838;
+  color: white;
+}
+
+.menubar p {
+  margin-left: 15px;
+  color: rgba(220, 220, 220, 0.642);
+}
+
+.menu {
+  padding: 0 30px;
+}
+
+.menu .menu-item {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu a i {
+  margin: 0 10px;
+}
+
+.hrmenu {
+  margin: 22px 0;
+  border: 1px solid gray;
+}
+
+#Logout {
+  padding-bottom: 50px;
+}
+#Dashboard {
+  padding-top: 30px;
+}
+/* MAIN */
+.content {
+  width: 84%;
+  margin: 55px 35px;
+}
+/* Attendance Sheet  */
+.content p{
+  text-align: center;
+  background-color: #f0f0f072;
+  padding: 5px 10px;
+  margin: 50px 0 10px 0;
+}
+.content h4 {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+.content table {
+  width: 100%;
+}
+
+.content table th {
+  background-color: #001f3f;
+  padding: 5px;
+  color: #fff;
+}
+
+.content table td {
+  text-align: center;
+  padding: 5px;
+}
+
+.content table input {
+  cursor: pointer;
+}
+
+/* Column types */
+.content table th.missed-col {
+  background-color: #f00;
+}
+
+.content table td.missed-col {
+  background-color: #ffecec;
+  color: #f00;
+  text-align: center;
+}
+
+.content table .Course {
+  text-align: left;
+}
+
+/*  */

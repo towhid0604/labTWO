@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  font-size: 17px;
+}
+
+/* HEADER */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.topbar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar .logo {
+  width: 17%;
+  text-align: center;
+}
+
+.topbar .logo img {
+  max-width: 100%;
+  width: 30%;
+}
+
+.topbar .searchbar {
+  width: 63%;
+  text-align: center;
+}
+
+.topbar .searchbar input[type="search"] {
+  width: 55%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1.5px solid black;
+}
+
+.topbar .profile {
+  width: 20%;
+  text-align: center;
+}
+
+.topbar .profile a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-left: 20px;
+}
+/* MENUBAR */
+.menubar {
+  width: 16%;
+  background-color: #1c2838;
+  color: white;
+}
+
+.menubar p {
+  margin-left: 15px;
+  color: rgba(220, 220, 220, 0.642);
+}
+
+.menu {
+  padding: 0 30px;
+}
+
+.menu .menu-item {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu a i {
+  margin: 0 10px;
+}
+
+.hrmenu {
+  margin: 22px 0;
+  border: 1px solid gray;
+}
+
+#Logout {
+  padding-bottom: 50px;
+}
+#Dashboard {
+  padding-top: 30px;
+}
+
+/* MAIN */
+.all-content {
+  width: 84%;
+  margin: 55px 35px;
+}
+.all-content h4 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+/* IMG GRID */
+.image-grid {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+  width: 100%;
+  height: 200px;
+  transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  text-align: center;
+}

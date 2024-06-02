@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICON CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/Enrolled-Courses.css" />
+  </head>
+  <body>
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="logo">
+        <img src="../Img/PUClogo.jpeg" alt="PUClogo" />
+      </div>
+      <div class="searchbar">
+        <input type="search" name="search" placeholder="Search......" />
+      </div>
+      <div class="profile">
+        <a href="#"><i class="fas fa-bell"></i></a>
+        <a href="../Html/chatbot.html"><i class="fas fa-envelope"></i></a>
+        <a href="Edit-Profile.html"><i class="fas fa-user"></i></a>
+      </div>
+    </div>
+    <!-- MENUBAR -->
+    <div class="container">
+      <div class="menubar">
+        <ul class="menu">
+          <li class="menu-item" id="Dashboard">
+            <a href="Home.html"><i class="fas fa-home"></i> Dashboard </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Academic</p>
+          <li class="menu-item">
+            <a href="Schedule.html"><i class="fas fa-clock"></i> Schedule </a>
+          </li>
+          <li class="menu-item">
+            <a href="Exam-Board.html"
+              ><i class="fa-solid fa-scroll"></i> Exam Board
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Grade-Report.html"
+              ><i class="fa-solid fa-chart-column"></i> Grade Report
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Enrolled-Courses.html"
+              ><i class="fa-solid fa-book-open-reader"></i> Enrolled Courses
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Course-Plan.html"
+              ><i class="fa-solid fa-clipboard"></i> Course Plan
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Attendance.html"
+              ><i class="fa-solid fa-clipboard-check"></i> Attendance
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Contact</p>
+          <li class="menu-item">
+            <a href="Chairman.html">
+              <i class="fas fa-file-signature"></i> Chairman
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Advisor.html"> <i class="fas fa-id-badge"></i> Advisor </a>
+          </li>
+          <li class="menu-item">
+            <a href="Course-Instructors.html">
+              <i class="fas fa-user"></i> Course Instructors
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Administrative</p>
+          <li class="menu-item">
+            <a href="Finance.html"> <i class="fas fa-coins"></i> Finance </a>
+          </li>
+          <li class="menu-item">
+            <a href="Announcements.html">
+              <i class="fas fa-bullhorn"></i> Announcements
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <p>Settings</p>
+          <li class="menu-item">
+            <a href="Edit-Profile.html">
+              <i class="fas fa-user-edit"></i> Edit Profile
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Edit-Registration.html"
+              ><i class="fas fa-user-cog"></i> Edit Registration
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="Class-Work.html">
+              <i class="fas fa-bell"></i> Class Work
+            </a>
+          </li>
+          <hr class="hrmenu" />
+          <ul class="menu" id="Logout">
+            <li class="menu-item">
+              <a href="login.html">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <!-- ALL CONTENT -->
+      <div class="all-content">
+        <!-- Enrolled Courses -->
+        <div class="main">
+          <h4 style="text-align: center;">Enroll Now</h4>
+          <form id="navigationForm">
+            <label for="Enrolled-Courses">Session Type</label><br />
+            <select id="Enrolled-Courses">
+              <option value="">Select</option>
+              <option>Bsc in CSE(Spring 24)</option>
+            </select>
+          </form>
+          <!-- Error Box-->
+          <div class="error-box" id="EnrolledCoursesError">
+            <p>List of Offered Courses of U-Version-4-CSE</p>
+            <table>
+              <tr>
+                <th>No</th>
+                <th>Mark</th>
+                <th>Sem</th>
+                <th>Course</th>
+                <th>ExamType</th>
+                <th>Status</th>
+              </tr>
+              <!-- 1 -->
+              <tr>
+                <td>1</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>BAN 1101 - Functional Bengali Language - Section A (2)</td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 2 -->
+              <tr>
+                <td>2</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>BAN 1101 - Functional Bengali Language - Section B (2)</td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 3 -->
+              <tr>
+                <td>3</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>BAN 1101 - Functional Bengali Language - Section C (2)</td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 4 -->
+              <tr>
+                <td>4</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  CSE 1111(V4) - Computer Fundamentals and Ethics - Section A
+                  (1.5)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 5 -->
+              <tr>
+                <td>5</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  CSE 1111(V4) - Computer Fundamentals and Ethics - Section B
+                  (1.5)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 6 -->
+              <tr>
+                <td>6</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  CSE 1111(V4) - Computer Fundamentals and Ethics - Section C
+                  (1.5)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 7 -->
+              <tr>
+                <td>7</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>CSE 1113(V4) - Programming Fundamentals - Section A (3)</td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 8 -->
+              <tr>
+                <td>8</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>CSE 1113(V4) - Programming Fundamentals - Section B (3)</td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 9 -->
+              <tr>
+                <td>9</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>CSE 1113(V4) - Programming Fundamentals - Section C (3)</td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 10 -->
+              <tr>
+                <td>10</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  CSE 1114(V4) - Programming Fundamentals Laboratory - Section A
+                  (1.5)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 11 -->
+              <tr>
+                <td>11</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  CSE 1114(V4) - Programming Fundamentals Laboratory - Section B
+                  (1.5)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 12 -->
+              <tr>
+                <td>12</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  CSE 1114(V4) - Programming Fundamentals Laboratory - Section C
+                  (1.5)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 13 -->
+              <tr>
+                <td>13</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  EEE 1101(V4) - Introduction to Electrical Engineering -
+                  Section A(3)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 14 -->
+              <tr>
+                <td>14</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  EEE 1101(V4) - Introduction to Electrical Engineering -
+                  Section B (3)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 15 -->
+              <tr>
+                <td>15</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  EEE 1101(V4) - Introduction to Electrical Engineering -
+                  Section C(3)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 16 -->
+              <tr>
+                <td>16</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  EEE 1102(V4) - Introduction to Electrical Engineering
+                  Laboratory - Section A (1.5)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 17 -->
+              <tr>
+                <td>17</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  EEE 1102(V4) - Introduction to Electrical Engineering
+                  Laboratory - Section B (1.5)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 18 -->
+              <tr>
+                <td>18</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  EEE 1102(V4) - Introduction to Electrical Engineering
+                  Laboratory - Section C (1.5)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 19 -->
+              <tr>
+                <td>19</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>ENG 1101(V4) - General English - Section A (3)</td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 20 -->
+              <tr>
+                <td>20</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>ENG 1101(V4) - General English - Section B (3)</td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 21 -->
+              <tr>
+                <td>21</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>ENG 1101(V4) - General English - Section C (3)</td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 22 -->
+              <tr>
+                <td>22</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  MAT 1203(V4) - Differential and Integral Calculus - Section A
+                  (3)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 23 -->
+              <tr>
+                <td>23</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  MAT 1203(V4) - Differential and Integral Calculus - Section B
+                  (3)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 24 -->
+              <tr>
+                <td>24</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  MAT 1203(V4) - Differential and Integral Calculus - Section C
+                  (3)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 25 -->
+              <tr>
+                <td>25</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  ME 1104(V4) - Mechanical Engineering Drawing - Section A
+                  (0.75)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 26 -->
+              <tr>
+                <td>26</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  ME 1104(V4) - Mechanical Engineering Drawing - Section B
+                  (0.75)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+              <!-- 27 -->
+              <tr>
+                <td>27</td>
+                <td><input type="checkbox" name="#" id="#" /></td>
+                <td>1st</td>
+                <td>
+                  ME 1104(V4) - Mechanical Engineering Drawing - Section C
+                  (0.75)
+                </td>
+                <td>
+                  <select name="#" id="#">
+                    <option value="select">Select</option>
+                    <option value="Retake">Retake</option>
+                    <option value="Recource">Recource</option>
+                    <option value="Regular">Regular</option>
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+            </table>
+            <button>Enroll Now</button>
+          </div>
+          <!-- Enrolled Courses box js -->
+          <script>
+            document
+              .getElementById("Enrolled-Courses")
+              .addEventListener("change", function () {
+                var selectedValue = this.value;
+                var EnrolledCoursesError = document.getElementById(
+                  "EnrolledCoursesError"
+                );
+                if (selectedValue === "") {
+                  EnrolledCoursesError.style.display = "none";
+                } else {
+                  EnrolledCoursesError.style.display = "block";
+                }
+              });
+          </script>
+        </div>
+      </div>
+      <!-- All Content Div END-->
+      <!-- END -->
+    </div>
+  </body>
+</html>

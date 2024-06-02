@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  font-size: 17px;
+}
+
+/* HEADER */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.topbar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar .logo {
+  width: 17%;
+  text-align: center;
+}
+
+.topbar .logo img {
+  max-width: 100%;
+  width: 30%;
+}
+
+.topbar .searchbar {
+  width: 63%;
+  text-align: center;
+}
+
+.topbar .searchbar input[type="search"] {
+  width: 55%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1.5px solid black;
+}
+
+.topbar .profile {
+  width: 20%;
+  text-align: center;
+}
+
+.topbar .profile a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-left: 20px;
+}
+/* MENUBAR */
+.menubar {
+  width: 16%;
+  background-color: #1c2838;
+  color: white;
+}
+
+.menubar p {
+  margin-left: 15px;
+  color: rgba(220, 220, 220, 0.642);
+}
+
+.menu {
+  padding: 0 30px;
+}
+
+.menu .menu-item {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu a i {
+  margin: 0 10px;
+}
+
+.hrmenu {
+  margin: 22px 0;
+  border: 1px solid gray;
+}
+
+#Logout {
+  padding-bottom: 50px;
+}
+#Dashboard {
+  padding-top: 30px;
+}
+/* MAIN */
+.all-content {
+  display: flex;
+  width: 84%;
+}

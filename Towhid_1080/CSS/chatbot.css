@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  font-size: 17px;
+}
+
+/* HEADER */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.topbar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar .logo {
+  width: 17%;
+  text-align: center;
+}
+
+.topbar .logo img {
+  max-width: 100%;
+  width: 30%;
+}
+
+.topbar .searchbar {
+  width: 63%;
+  text-align: center;
+}
+
+.topbar .searchbar input[type="search"] {
+  width: 55%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1.5px solid black;
+}
+
+.topbar .profile {
+  width: 20%;
+  text-align: center;
+}
+
+.topbar .profile a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-left: 20px;
+}
+/* MENUBAR */
+.menubar {
+  width: 16%;
+  background-color: #1c2838;
+  color: white;
+}
+
+.menubar p {
+  margin-left: 15px;
+  color: rgba(220, 220, 220, 0.642);
+}
+
+.menu {
+  padding: 0 30px;
+}
+
+.menu .menu-item {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu a i {
+  margin: 0 10px;
+}
+
+.hrmenu {
+  margin: 22px 0;
+  border: 1px solid gray;
+}
+
+#Logout {
+  padding-bottom: 50px;
+}
+#Dashboard {
+  padding-top: 30px;
+}
+/* ALL CONTENT */
+body .card {
+	width: 70vw;
+	height: 45vw;
+	background-color: white;
+	margin-left: 5vw;
+	margin-top: 5vw;
+  }
+  body .card #header {
+	text-align: center;
+	background: #000;
+  }
+  body .card #header h1 {
+	color: #fff;
+	font-size: 1.5vw;
+	font-family: "Finger Paint", cursive;
+	padding: 1vw;
+  }
+  body .card #message-section::-webkit-scrollbar {
+	width: 10px;
+  }
+  body .card #message-section {
+	height: 32vw;
+	padding: 0 2.5vw;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body .card #message-section::-webkit-scrollbar-track {
+	background: var(--scrollbarBG);
+  }
+  body .card #message-section::-webkit-scrollbar-thumb {
+	background-color: var(--thumbBG);
+	border-radius: 6px;
+	border: 3px solid var(--scrollbarBG);
+  }
+  body .card #message-section #bot,
+  body .card #message-section #user {
+	position: relative;
+	bottom: 0;
+	border: 0.15vw solid #777;
+	background-color: #fff;
+	border-radius: 0px 1.5vw 1.5vw 1.8vw;
+	margin: 1.5vw 0;
+  }
+  body .card #message-section #user {
+	border: 1.5px solid #000;
+	border-radius: 1.5vw 0vw 1.5vw 1.8vw;
+	background-color: #000;
+	float: right;
+  }
+  body .card #message-section #user #user-response {
+	color: #fff;
+  }
+  body .card #message-section .message {
+	color: #000;
+	clear: both;
+	line-height: 1.2vw;
+	font-size: 1.2vw;
+	padding: 8px;
+	position: relative;
+	margin: 8px 0;
+	max-width: 85%;
+	word-wrap: break-word;
+	z-index: 2;
+  }
+  body .card #input-section {
+	z-index: 1;
+	padding: 0 2.5vw;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	overflow: hidden;
+	width: 100%;
+  }
+  body .card #input-section input {
+	color: #000;
+	min-width: 0.5vw;
+	outline: none;
+	height: 5vw;
+	width: 60vw;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: solid #000 0.1vw;
+  }
+  body .card .send {
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	flex: 0 0 auto;
+	margin-left: 1.4vw;
+	margin-right: 0vw;
+	padding: 0;
+	position: relative;
+	outline: none;
+  }
+  body .card .send .circle {
+	position: relative;
+	width: 4.8vw;
+	height: 4.8vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  body .card .send .circle i {
+	font-size: 3vw;
+	margin-left: -1vw;
+	margin-top: 1vw;
+  }
